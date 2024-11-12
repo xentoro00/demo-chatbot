@@ -5,7 +5,7 @@ import { customMiddleware } from './custom-middleware';
 
 export const customModel = (apiIdentifier: string) => {
   return wrapLanguageModel({
-    model: openai(apiIdentifier),
+    model: openai("gpt-3.5-turbo"),
     middleware: customMiddleware,
   });
 };
